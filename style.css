@@ -37,7 +37,7 @@ html {
 .form-legend {
     position: absolute;
     top: -22px;
-    padding-bottom: 45px;
+    padding-bottom: 5px;
     z-index: 1000;
 }
 
@@ -52,7 +52,7 @@ html {
 }
 
 .form-group input, .form-group select, .form-group label {
-    width: 100%;
+    width: auto;
     line-height: 25px;
 }
 
