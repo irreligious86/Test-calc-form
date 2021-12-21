@@ -32,7 +32,9 @@ const visibleToggler = e => {
 }
 
 legends.forEach(i => i.addEventListener('mouseover', visibleToggler))
+legends.forEach(i => i.addEventListener('tap', visibleToggler))
 
 legends.forEach(i => i.addEventListener('mouseout', visibleToggler))
+legends.forEach(i => i.addEventListener('tap', visibleToggler))
 
 runBtn.addEventListener('click', runBtnHandler)
