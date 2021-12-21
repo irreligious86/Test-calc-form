@@ -24,7 +24,7 @@ html {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
     /*background-color: rgba(0, 255, 255, 0.1);*/
 }
 
@@ -32,10 +32,18 @@ html {
     border: 1px solid green;
     padding: 0 3px;
     width: 100%;
-box-shadow:  3px 5px 15px 2px rgba(186, 186, 186, 0.7);
+    box-shadow: 3px 5px 15px 2px rgba(186, 186, 186, 0.7);
+    position: relative;
 }
 
-.form-group label {
+.form-legend {
+    position: absolute;
+    top: -22px;
+    padding-bottom: 45px;
+    z-index: 1000;
+}
+
+.form-label {
     margin: 0 5px;
 }
 
@@ -49,9 +57,29 @@ box-shadow:  3px 5px 15px 2px rgba(186, 186, 186, 0.7);
     line-height: 25px;
 }
 
-.form-group input::placeholder {
-    background-color: transparent;
-}
+/*.form-input::-webkit-input-placeholder {*/
+/*    color: transparent;*/
+/*    border: none;*/
+/*}*/
+
+
+/*.form-input:focus ~ .form-label,*/
+/*.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {*/
+/*    display: block;*/
+/*    top: 5px;*/
+/*    font-size: 14px;*/
+/*    color: orangered;*/
+/*}*/
+
+/*.form-input:focus ~ .form-label{*/
+/*    background-color: orange;*/
+/*}*/
+
+/*.form-group:hover ~ .form-label {*/
+/*    display: inline-block;*/
+/*    background-color: aqua;*/
+/*}*/
+
 
 .form-button {
     padding: 3px 16px;
@@ -60,4 +88,12 @@ box-shadow:  3px 5px 15px 2px rgba(186, 186, 186, 0.7);
     background-color: rgba(0, 139, 139, 0.3);
     color: #032626;
     box-shadow: 3px 5px 15px 2px rgba(186, 186, 186, 0.7);
+}
+
+.transparent {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    transition: all .3s .1s ease-in-out;
+    /*display: none;*/
 }
