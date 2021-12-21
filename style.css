@@ -16,7 +16,6 @@ html {
     gap: 40px;
     width: min(600px, 100vw);
     margin: 0 auto;
-    /*background-color: rgba(0, 255, 255, 0.1);*/
 }
 
 .form {
@@ -25,7 +24,6 @@ html {
     align-items: flex-start;
     gap: 20px;
     padding-bottom: 40px;
-    /*background-color: rgba(0, 255, 255, 0.1);*/
 }
 
 .form-group {
@@ -54,32 +52,9 @@ html {
 }
 
 .form-group input, .form-group select, .form-group label {
+    width: 100%;
     line-height: 25px;
 }
-
-/*.form-input::-webkit-input-placeholder {*/
-/*    color: transparent;*/
-/*    border: none;*/
-/*}*/
-
-
-/*.form-input:focus ~ .form-label,*/
-/*.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {*/
-/*    display: block;*/
-/*    top: 5px;*/
-/*    font-size: 14px;*/
-/*    color: orangered;*/
-/*}*/
-
-/*.form-input:focus ~ .form-label{*/
-/*    background-color: orange;*/
-/*}*/
-
-/*.form-group:hover ~ .form-label {*/
-/*    display: inline-block;*/
-/*    background-color: aqua;*/
-/*}*/
-
 
 .form-button {
     padding: 3px 16px;
@@ -95,6 +70,4 @@ html {
     background-color: transparent;
     border-color: transparent;
     transition: all .3s .1s ease-in-out;
-    z-index: -1000;
-    /*display: none;*/
 }
